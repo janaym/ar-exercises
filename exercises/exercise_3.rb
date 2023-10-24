@@ -6,3 +6,16 @@ puts "Exercise 3"
 puts "----------"
 
 # Your code goes here ...
+
+
+@store3 = Store.find_by(id: 3)
+
+
+if @store3.destroy
+  puts "success"
+else
+  puts "destroy failed"
+end
+
+puts ("Question 3: there are #{Store.count} stores")
+
